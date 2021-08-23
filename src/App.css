@@ -1,0 +1,126 @@
+.main{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    margin: 10px;
+    position: relative;
+}
+.main .hidden{
+    border: dashed 1px grey;
+    position: absolute;
+    width: 130px;
+    height: 150px;
+    overflow: hidden;
+}
+.main img{
+    width: 300px;
+    height: 400px;
+}
+
+.container{
+    display: flex;
+}
+
+.card img{
+    height: 100px;
+    width: 70px;
+    margin: 20px;
+}
+
+.App p{
+    border: 1px solid #52ABDA;
+    border-radius: 10px;
+    background: #52ABDA;
+    color: white;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.editor{
+    width: 900px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.editorClassName{
+    border: 1px dashed black;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+
+}
+.leftPanel {
+    background: url("11.jpg");
+    background-size: 380px;
+    background-repeat: no-repeat;
+
+}
+
+
+.rightPanel {
+    background-color: lightcyan;
+}
+
+.leftPanel,
+.rightPanel {
+    height: 500px;
+}
+
+.dragElement,
+.box {
+    background: #fff;
+    /* border: 1px solid #999; */
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+
+.react-resizable {
+    position: relative;
+}
+.react-resizable-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iNnB4Ij48ZyBvcGFjaXR5PSIwLjMwMiI+PHBhdGggZD0iTSA2IDYgTCAwIDYgTCAwIDQuMiBMIDQgNC4yIEwgNC4yIDQuMiBMIDQuMiAwIEwgNiAwIEwgNiA2IEwgNiA2IFoiIGZpbGw9IiMwMDAwMDAiLz48L2c+PC9zdmc+");
+    background-position: bottom right;
+    padding: 0 3px 3px 0;
+    background-repeat: no-repeat;
+    cursor: se-resize;
+}
+
+.box {
+    display: inline-block;
+    background: #ccc;
+    /* border: 1px solid black; */
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.box .text {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 36px;
+}
+.box3 .react-resizable-handle {
+    display: none;
+}
+.box3:hover .react-resizable-handle {
+    display: block;
+}
+.box item-1{
+
+}
